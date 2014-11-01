@@ -2,6 +2,10 @@ body {
   padding-top: 50px;
 }
 
+.navbar-header{
+    height:  175px;
+}
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
