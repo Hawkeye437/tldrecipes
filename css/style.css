@@ -2,6 +2,10 @@ body {
   padding-top: 50px;
 }
 
+.container{
+    padding-top: 50px;
+}
+
 .navbar-header{
     height:  175px;
 }
@@ -12,5 +16,5 @@ body {
 }
 
 .search, .search_text {
-  text-align:center;
+  text-align: center;
 }
