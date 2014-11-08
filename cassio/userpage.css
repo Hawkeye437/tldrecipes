@@ -1,34 +1,58 @@
-head, body{
+head, body {
     font-family: 'Open Sans', Arial, sans-serif;
     color: #000;
 }
 
-.navbar-header{
+.navbar-header {
     height: 50px;
 }
 
-#user-page{
+#user-page {
     display: block;
     width: 100%;
-    background-color: #f00;
     margin-top: -10px;
     font-size: 20px;
     padding: 1px 40px 20px 20px;
 }
 
-#user-page h1{
+#user-image {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+#user-page h1, h2 {
     font-weight: bold;
+}
+
+#user-page h1 {
     text-align: center;
 }
 
-.col-lg-6{
-    width: 95%;
+#user-info, #about-me {
+    background-color: #cdcdef;
 }
 
-.btn-active {
-    background: #cc0717;
+#user-info{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
-input[type="checkbox"] {
-  margin-right: 5px;
+#user-info ul {
+    list-style-type: none;
+}
+
+.img-responsive {
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#about-me {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
