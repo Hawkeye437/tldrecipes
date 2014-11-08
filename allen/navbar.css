@@ -5,3 +5,28 @@ body {
 .starter-template {
 	text-align: center;
 }
+
+.navbar {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.navbar .btn {
+	margin-left: 5px
+}
+
+@media (max-width: 767px) {
+	.navbar .btn {
+		margin-left: 0;
+		width: 100%
+	}
+}
+
+.navbar-brand {
+	font-size: 32px
+}
+
+.navbar form {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
