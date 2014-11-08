@@ -1,3 +1,8 @@
+head, body{
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #000;
+}
+
 .navbar-header{
     height: 50px;
 }
@@ -5,9 +10,13 @@
 #advanced-menu{
     display: block;
     width: 600px;
-    margin-top: 50px;
+    margin-top: -10px;
     font-size: 20px;
     padding: 1px 40px 20px 20px;
+}
+
+#advanced-menu h1{
+    font-weight: bold;
 }
 
 .col-lg-6{
