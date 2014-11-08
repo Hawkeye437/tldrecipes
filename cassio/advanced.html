@@ -21,9 +21,8 @@
 
     <body>
 
-
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -35,39 +34,80 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="allen/allen.html" target="_blank">Allen</a></li>
-                        <li><a href="cassio/advanced.html" target="_blank">Cassio</a></li>
-                        <li><a href="sid/sid.html" target="_blank">Sidhart</a></li>
-                        <li><a href="will/william.html" target="_blank">William</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Recently Submitted</a></li>
+                                <li><a href="#">Most Popular</a></li>
+                                <li><a href="#">Highest Success Rate</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">???</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Create Recipe</a></li>
                     </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group input-group">
+                            <input type="text" class="form-control" placeholder="Find a recipe or user">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="nav-search-filter">Recipes</span> <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <li><a href="#">Recipes</a></li>
+                                    <li><a href="#">Users</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">User <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">View Profile</a></li>
+                                <li><a href="#">Get Recommendations</a></li>
+                                <li><a href="#">Edit Settings</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Sign out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- ./collapse navbar-collapse -->
+            </div>
+        </div>
+        <div class="container">
+            <div id="advanced-menu">
+                <form id="advance_form" action="">
+                    <h2>Search recipes by user:</h2>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="input-group">
+                                <span class="input-group-addon">@</span>
+                                <input type="text" class="form-control" placeholder="User name">
+                            </div><!-- /.input-group-->
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                    <br>
+                    <h2>Search recipes by name:</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">Exactly:</span>
                                 <input type="text" class="form-control">
-                                <div class="input-group-btn">
-                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-                                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a></li>
-                                    </ul>
-                                </div><!-- /btn-group -->
                             </div><!-- /input-group -->
                         </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row --><!-- This is the new search bar-->
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-
-
-        <div class="container">
-
-            <div id="advanced-menu">
-                <h1>Search recipes with:</h1>
-                <form id="advance_form" action="">
+                    </div><!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">With these words:</span>
+                                <input type="text" class="form-control">
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                    <br>
+                    <h2>Search recipes with:</h2>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="input-group">
@@ -84,11 +124,50 @@
                             </div><!-- /input-group -->
                         </div><!-- /.col-lg-6 -->
                     </div><!-- /.row -->
-                    <input type="checkbox" name="search_by" value="ingredient">Ingredient<br>
-                    <input type="checkbox" name="search_by" value="prep_time">Preparation time<br>
+                    <br>
+                    <h2>Preparation time limit:</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default btn-active" type="button">None</button>
+                                    <button type="button" class="btn btn-default">15 minutes</button>
+                                    <button type="button" class="btn btn-default">30 minutes</button>
+                                    <button type="button" class="btn btn-default">45 minutes</button>
+                                    <button type="button" class="btn btn-default">1 hours</button>
+                                    <button type="button" class="btn btn-default">2 hours</button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                    <br>
+                    <h2>Dietary restrictions:</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="checkbox">Vegetarian
+                                </span>
+                                <span class="input-group-addon">
+                                    <input type="checkbox">Vegan
+                                </span>
+                                <span class="input-group-addon">
+                                    <input type="checkbox">Gluten-Free
+                                </span>
+                                <span class="input-group-addon">
+                                    <input type="checkbox">Dairy-Free
+                                </span>
+                                <span class="input-group-addon">
+                                    <input type="checkbox">Kosher
+                                </span>
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                    <br>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Search</a>
+                    <br>
                 </form>
-            </div>
-
+            </div><!-- /.advanced-menu -->
         </div><!-- /.container -->
         <!-- Bootstrap core JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
