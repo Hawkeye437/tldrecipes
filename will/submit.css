@@ -1,2 +1,72 @@
 /* Stylesheet for submit.css */
 
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+label {
+
+}
+
+section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Generic wrapper for aligning to the center */
+.wrapper {
+	display: inline-block;
+}
+
+.content {
+	display: inline-block;
+	width: 66%;
+}
+
+.header {
+	padding: 35px;
+}
+
+.title {
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+.step { 
+	font-size: 18px;
+}
+
+.name-label {
+	width: 100%;
+}
+
+#name-input {
+	text-align: center;
+	width: 300px;
+}
+
+.dropzone {
+	background: rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+.steptext {
+	padding: 0 10px;
+	vertical-align: 33%;
+	font-size: 18px;
+}
+
+.goback {
+	float: left;
+	cursor: pointer;
+}
+
+.goforward {
+	float: right;
+	cursor: pointer;
+}
+
+.faded {
+	opacity: 0.33;
+}
