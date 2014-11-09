@@ -26,17 +26,11 @@
 	.recipe-listing {
 		width: 1125px;
 	}
-	.container {
-		width: 1100px;
-	}
 }
  
 @media (min-width: 768px) and (max-width: 1200px) {
 	.recipe-listing {
 		width: 750px;
-	}
-	.container {
-		width: 725px;
 	}
 }
  
@@ -44,17 +38,11 @@
 	.recipe-listing {
 		width: 375px;
 	}
-	.container {
-		width: 350px;
-	}
 }
  
 @media (max-width: 480px) {
 	.recipe-listing {
 		width: 375px;
-	}
-	.container {
-		width: 350px;
 	}
 }
 

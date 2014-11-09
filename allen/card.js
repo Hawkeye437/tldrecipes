@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$('head').append('<link rel="stylesheet" href="../allen/card.css" type="text/css" />');
+	$('head').append('<link rel="stylesheet" href="../allen/container-fix.css" type="text/css" />');
 	loadCards($('.recipes'));
 	$('body').on('DOMNodeInserted', function(event) {
 		if ($(event.target).is('.recipes')) {
