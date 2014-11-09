@@ -29,7 +29,7 @@ body {
 	background-color: #bd0014;
 }
 
-.dropdown-menu {
+.dropdown-menu:not(.dropdown-menu-right) {
 	background-color: #71000c;
 }
 
