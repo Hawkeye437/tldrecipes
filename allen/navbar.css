@@ -29,6 +29,10 @@ body {
 	background-color: #bd0014;
 }
 
+.dropdown-menu {
+	background-color: #71000c;
+}
+
 .navbar-inverse .navbar-toggle,
 .navbar-inverse .navbar-toggle.collapsed:hover,
 .navbar-inverse .navbar-toggle.collapsed:focus {
