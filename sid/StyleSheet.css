@@ -35,7 +35,7 @@ body {
   z-index: 2;
 }
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
+  margin-bottom: 10px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -43,4 +43,20 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.form-signin input[type="name"] {
+  margin-bottom:10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.btn-primary{
+  background-color:#71000C;
+  border-color: black;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, 
+.btn-primary.active, .open>.dropdown-toggle.btn-primary{
+  background-color:#bd0014;
+  border-color:#3E0007;
 }
