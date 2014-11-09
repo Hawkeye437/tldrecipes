@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+}
+
+.recipe-listing {
+	display: block;
+	width: 100%;
+	padding: 10px 10px;
+	font-size: 0;
+}
+
+.recipe-card {
+	display: inline-block;
+	width: 350px;
+	height: 350px;
+	margin: 0 20px 20px 0;
+	border: 2px solid #ddd;
+	list-style: none;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.recipe-card a,
+.recipe-card a:hover {
+	color: black;
+}
+
+.recipe-card-img {
+	height: 70%;
+	background-size: cover;
+}
+
+.recipe-card-info {
+	height: 30%;
+	padding: 10px;
+	border-top: 0px;
+	overflow: hidden;
+}
+
+.recipe-info-top-wrapper:after {
+	clear: both;
+	display: block;
+	content: "";
+	height: 0;
+}
+
+.recipe-info-name-wrapper {
+	width: 248px; /*248px*/
+	float: left;
+}
+
+.recipe-name {
+	font-size: 20px;
+}
+
+.recipe-diet {
+	width: 78px;
+	float: right;
+	vertical-align: top;
+	text-align: left;
+	font-size: 0;
+}
+
+.diet-icon {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 0 0 4px 4px;
+	padding: 3px 0;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	color: white;
+}
+
+.diet-icon.vegetarian {
+	background: #096b00;
+}
+
+.diet-icon.vegan {
+	background: #2a0;
+}
+
+.diet-icon.dairy {
+	background: #008a8a;
+}
+
+.diet-icon.kosher {
+	background: #ab9210;
+}
+
+.diet-icon.gluten {
+	background: #c46f0e;
+}
+
+.recipe-success {
+	
+}
+
+.recipe-success .success-bar {
+	width: 190px;
+	height: 10px;
+	border: 1px solid #ccc;
+	background: #eee;
+}
+
+.success-bar .success {
+	height: 100%;
+	/*#0094e5*/
+	/*#48bd13*/
+	background-color: #097fb9;
+}
+
+.recipe-success > div {
+	display: inline-block;
+}
+
+.recipe-success .success-text {
+	float: right;
+}
+
+.recipe-success .success-rate {
+	font-weight: bold;
+}
