@@ -35,6 +35,7 @@ section {
 
 .step { 
 	font-size: 18px;
+	color: #71000c;
 }
 
 .name-label {
@@ -69,4 +70,13 @@ section {
 
 .faded {
 	opacity: 0.33;
+}
+
+a {
+	color:#71000C;
+
+}
+
+a:hover, a:focus {
+	color:#bd0014;
 }

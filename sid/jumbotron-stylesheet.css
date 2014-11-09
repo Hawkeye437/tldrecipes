@@ -5,11 +5,12 @@
  	font-weight: 400;/* where XXX is the number (400, 300, 600) */
 	position:relative;
 	z-index: 1;
+	height:350px;
 
 	/*Simulated black transparency by using a linear gradient with an image under it*/
 	background:
 	    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-	    url("../sid/apple1.jpg");
+	    url("../sid/pasta-orig.jpg");
 }
 
 .transparent{
