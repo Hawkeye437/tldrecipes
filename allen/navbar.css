@@ -8,6 +8,32 @@ body {
 
 .navbar {
 	font-family: 'Open Sans', Arial, sans-serif;
+	background-color: #71000c;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-toggle:not(.collapsed) {
+	background-color: #3e0007;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+	background-color: #bd0014;
+}
+
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle.collapsed:hover,
+.navbar-inverse .navbar-toggle.collapsed:focus {
+	border-color: white;
+	background-color: #71000c;
 }
 
 .navbar .btn {
