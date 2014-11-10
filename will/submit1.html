@@ -40,9 +40,9 @@
             </section>
             <section>
                 <div class="time">
-                    <label for="time-input">Time</label>
+                    <label for="time-input">Approximate Time:</label>
                     <div id="time-input">
-                        <label class="radio-inline">
+<!--                         <label class="radio-inline">
                             <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
                         </label>
                         <label class="radio-inline">
@@ -56,7 +56,25 @@
                         </label> 
                         <label class="radio-inline">
                             <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 5
-                        </label> 
+                        </label>  -->
+
+                        <!-- Single button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                Time <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">5 Minutes</a></li>
+                                <li><a href="#">10 Minutes</a></li>
+                                <li><a href="#">15 Minutes</a></li>
+                                <li><a href="#">30 Minutes</a></li>
+                                <li><a href="#">45 Minutes</a></li>
+                                <li><a href="#">1 Hour</a></li>
+                                <li><a href="#">1 Hour 30 Minutes</a></li>
+                                <li><a href="#">2 Hours</a></li>
+                                <li><a href="#">3 Hours</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -65,19 +83,21 @@
                     <label for="dietary-input">Dietary Restrictions</label>
                     <div id="dietary-input">
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                            <input type="checkbox" id="inlineCheckbox1" value="Veg-option"> <div class="recipe-diet"><div class="diet-icon vegetarian">V</div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                            <input type="checkbox" id="inlineCheckbox2" value="option2"> <div class="recipe-diet"><div class="diet-icon vegan">Vg</div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                            <input type="checkbox" id="inlineCheckbox3" value="option3"> <div class="recipe-diet"><div class="diet-icon dairy">Df</div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option3"> 4
+                            <input type="checkbox" id="inlineCheckbox3" value="option4"> <div class="recipe-diet"><div class="diet-icon kosher">K</div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option3"> 5
+                            <input type="checkbox" id="inlineCheckbox3" value="option5"> <div class="recipe-diet"> <div class="diet-icon gluten">Gl</div></div>
+
+                           
                         </label>
                     </div>
                 </div>
