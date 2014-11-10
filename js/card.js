@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('head').append('<link rel="stylesheet" href="../allen/card.css" type="text/css" />');
-	$('head').append('<link rel="stylesheet" href="../allen/container-fix.css" type="text/css" />');
+	$('head').append('<link rel="stylesheet" href="css/card.css" type="text/css" />');
+	$('head').append('<link rel="stylesheet" href="css/container-fix.css" type="text/css" />');
 	loadCards($('.recipes'));
 	$('body').on('DOMNodeInserted', function(event) {
 		if ($(event.target).is('.recipes')) {
@@ -30,18 +30,18 @@ function loadCards(listings) {
 		var listing = $(this).find('.listing');
 		var numCards = $(this).data('length');
 		var diets = [
-			'<a href="../allen/browse.html?category=Vegetarian Recipes" class="diet-icon vegetarian" data-tooltip="Vegetarian" data-color="#096b00">V</a>',
-			'<a href="../allen/browse.html?category=Vegan Recipes" class="diet-icon vegan" data-tooltip="Vegan" data-color="#2a0">Vg</a>',
-			'<a href="../allen/browse.html?category=Dairy-Free Recipes" class="diet-icon dairy" data-tooltip="Dairy-Free" data-color="#008a8a">Df</a>',
-			'<a href="../allen/browse.html?category=Kosher Recipes" class="diet-icon kosher" data-tooltip="Kosher" data-color="#ab9210">K</a>',
-			'<a href="../allen/browse.html?category=Gluten-Free Recipes" class="diet-icon gluten" data-tooltip="Gluten-Free" data-color="#c46f0e">Gl</a>'
+			'<a href="browse.html?category=Vegetarian Recipes" class="diet-icon vegetarian" data-tooltip="Vegetarian" data-color="#096b00">V</a>',
+			'<a href="browse.html?category=Vegan Recipes" class="diet-icon vegan" data-tooltip="Vegan" data-color="#2a0">Vg</a>',
+			'<a href="browse.html?category=Dairy-Free Recipes" class="diet-icon dairy" data-tooltip="Dairy-Free" data-color="#008a8a">Df</a>',
+			'<a href="browse.html?category=Kosher Recipes" class="diet-icon kosher" data-tooltip="Kosher" data-color="#ab9210">K</a>',
+			'<a href="browse.html?category=Gluten-Free Recipes" class="diet-icon gluten" data-tooltip="Gluten-Free" data-color="#c46f0e">Gl</a>'
 		];
 		for (var i = 0; i < numCards; i++) {
 			var max = 100;
 			var min = 1;
 			var randSuccessRate = Math.floor(Math.random() * (max - min + 1) + min);
 			shuffle(diets);
-			var card = '<li class="recipe-card"><a href="../will/recipe.html"><div class="recipe-card-img" style="background-image: url(\'../allen/card.jpg\')"></div></a><div class="recipe-card-info"><div class="recipe-info-top-wrapper"><div class="recipe-info-name-wrapper"><div class="recipe-name"><a href="../will/recipe.html">Pasta</a></div><div class="recipe-user">by <a href="../userpage.html">pastafreak123</a></div></div><div class="recipe-diet">'
+			var card = '<li class="recipe-card"><a href="recipe.html"><div class="recipe-card-img" style="background-image: url(\'img/card.jpg\')"></div></a><div class="recipe-card-info"><div class="recipe-info-top-wrapper"><div class="recipe-info-name-wrapper"><div class="recipe-name"><a href="recipe.html">Pasta</a></div><div class="recipe-user">by <a href="userpage.html">pastafreak123</a></div></div><div class="recipe-diet">'
 					+ diets[0] + diets[1] + diets[2]
 					+ '<div class="diet-tooltip"></div></div></div><div class="recipe-success"><div class="success-bar"><div class="success" style="width: '
 					+ randSuccessRate + '%"></div></div><div class="success-text"><span class="success-rate">'
