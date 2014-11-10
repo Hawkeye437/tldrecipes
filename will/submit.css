@@ -81,13 +81,6 @@ a:hover, a:focus {
 	color:#bd0014;
 }
 
-.recipe-diet {
-	width: 78px;
-	float: right;
-	vertical-align: top;
-	text-align: left;
-	font-size: 0;
-}
 
 .diet-icon {
 	display: inline-block;
@@ -122,4 +115,9 @@ a:hover, a:focus {
 
 .diet-icon.gluten {
 	background: #c46f0e;
+}
+
+#dropdown
+{
+	background-color:white;
 }
