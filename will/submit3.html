@@ -25,11 +25,37 @@
                 <div class="step">STEP 3</div>
             </div>
             <section>
+                <label id="ingredients-label" for="ingredients-input">Step-by-Step Instructions</label>
+                <div class="ingredients-input">
+                    <div class="wrapper">
+                        <div class="ing-wr">
+                            <div class="ing-row">
+                                <div class="ing-header">Step #</div>
+                                <div class="ing-header">Step Instructions</div>
+                            </div>
+                            <div class="ing-row">
+                                <div class="ing-cell"><span class="step-icon">1</span></div>
+                                <div class="ing-cell"><textarea class="ing-name step-cell form-control" type="textarea" rows="3"></textarea></div>
+                            </div>
+                            <div class="ing-row">
+                                <div class="ing-cell"><span class="step-icon">2</span></div>
+                                <div class="ing-cell"><textarea class="ing-name step-cell form-control" type="textarea" rows="3"></textarea></div>
+                            </div>
+                            <div class="ing-row">
+                                <div class="ing-cell"><span class="step-icon">3</span></div>
+                                <div class="ing-cell"><textarea class="ing-name step-cell form-control" type="textarea" rows="3"></textarea></div>
+                            </div>
+                        </div>
+                        <button id="stepAdd" class="btn btn-default" type="submit"><i class="fa fa-plus fa-1x"></i><span id="button-text">Add Step</span></button> 
+                    </div>
+                </div>
+            </section>
+            <section>
                 <div class="goback">
                     <a href="./submit2.html"><i class="fa fa-arrow-circle-left fa-3x"></i><span class="steptext">Previous Step</span></a>
                 </div>
                 <div class="goforward">
-                    <a href="./submit3.html"><span class="steptext">Finish</span><i class="fa fa-arrow-circle-right fa-3x"></i></a>
+                    <a href="../allen/home.html"><span class="steptext">Finish</span><i class="fa fa-arrow-circle-right fa-3x"></i></a>
                 </div>
             </section>
         </div><!-- ./container -->
@@ -40,5 +66,6 @@
         <!-- Custom JS files for this page -->
         <script src="../cassio/header.js"></script>
         <script src="../allen/navbar.js"></script>
+        <script src="./submit.js"></script>
     </body>
 </html>
