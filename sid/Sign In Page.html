@@ -13,19 +13,13 @@
         <!-- Custom styles for this page -->
         <link href="../sid/Sign-stylesheet.css" rel="stylesheet">
 
-        <title>Sign in | TD&#59;DRecipes</title>
-
-        <!-- Font loading -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
-
-        <!-- Favicon image -->
-        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+        <!-- Custom title -->
+        <title>Sign in</title>
 
     </head>
     <body>
         <div class="container">
-            <form class="form-signin" role="form">
+            <form class="form-signin" role="form" action="../allen/home.html">
                 <h2 class="form-signin-heading">Sign in to TL&#59;DRecipes</h2>
                 <input type="email" class="form-control" placeholder="Email address" autofocus="true">
                 <input type="password" class="form-control" placeholder="Password">
@@ -35,12 +29,15 @@
                     </label>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                <button onclick="window.location.href = '../sid/New_user.html'" class="btn btn-lg btn-primary btn-block" type="button">Create New Account</button>
+                <button class="btn btn-lg btn-primary btn-block" type="button" onclick="window.location.href = '../sid/New_user.html'">Create New Account</button>
             </form>
         </div> <!-- /container -->
-
+        <!-- JavaScript placed at the end of the document so the pages load faster -->
+        <!-- jQuery and Bootstrap JS files -->
         <script src="../js/vendor/jquery-2.1.1.min.js"></script>
         <script src="../js/vendor/bootstrap.min.js"></script>
+        <!-- Custom JS files for this page -->
+        <script src="../cassio/header.js"></script>
         <script src="../allen/navbar.js"></script>
     </body>
 </html>
