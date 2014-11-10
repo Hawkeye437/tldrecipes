@@ -121,3 +121,42 @@ a:hover, a:focus {
 {
 	background-color:white;
 }
+
+#ingredients-label {
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.ingredients-input {
+	text-align: center;
+}
+
+.ing-row {
+	display: table-row;
+}
+
+.ing-header {
+	display: table-cell;
+}
+
+.ing-cell {
+	display: table-cell;
+	padding: 10px 15px;
+	vertical-align: middle;
+}
+
+.ing-num {
+	width: 50px;
+}
+
+.ing-name {
+	width: 200px;
+}
+
+#ingAdd {
+	margin-top: 20px;
+}
+
+#button-text {
+	padding-left: 10px;
+}

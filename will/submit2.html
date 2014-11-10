@@ -25,6 +25,46 @@
                 <div class="step">STEP 2</div>
             </div>
             <section>
+                <label id="ingredients-label" for="ingredients-input">Ingredients</label>
+                <div class="ingredients-input">
+                    <div class="wrapper">
+                        <div class="ing-wr">
+                            <div class="ing-row">
+                                <div class="ing-header">#</div>
+                                <div class="ing-header">Ingredient Name</div>
+                            </div>
+                            <div class="ing-row">
+                                <div class="ing-cell"><input class="ing-num form-control" type="text" maxlength="2"></div>
+                                <div class="ing-cell"><input class="ing-name form-control" type="text"></div>
+                            </div>
+                            <div class="ing-row">
+                                <div class="ing-cell"><input class="ing-num form-control" type="text" maxlength="2"></div>
+                                <div class="ing-cell"><input class="ing-name form-control" type="text"></div>
+                            </div>
+                            <div class="ing-row">
+                                <div class="ing-cell"><input class="ing-num form-control" type="text" maxlength="2"></div>
+                                <div class="ing-cell"><input class="ing-name form-control" type="text"></div>
+                            </div>
+                        </div>
+                        <button id="ingAdd" class="btn btn-default" type="submit"><i class="fa fa-plus fa-1x"></i><span id="button-text">Add Ingredient</span></button> 
+                    </div>
+                </div>
+                <!--
+                <div class="ingredients-input">
+                    <input class="ing-num form-control" type="text" maxlength="2">
+                    <input class="ing-name form-control" type="text">
+                </div>
+                <div class="ingredients-input">
+                    <input class="ing-num form-control" type="text" maxlength="2">
+                    <input class="ing-name form-control" type="text">
+                </div>
+                <div class="ingredients-input">
+                    <input class="ing-num form-control" type="text" maxlength="2">
+                    <input class="ing-name form-control" type="text">
+                </div>
+            -->
+            </section>
+            <section>
                 <div class="goback">
                     <a href="./submit1.html"><i class="fa fa-arrow-circle-left fa-3x"></i><span class="steptext">Previous Step</span></a>
                 </div>
@@ -40,5 +80,6 @@
         <!-- Custom JS files for this page -->
         <script src="../cassio/header.js"></script>
         <script src="../allen/navbar.js"></script>
+        <script src="./submit.js"></script>
     </body>
 </html>
