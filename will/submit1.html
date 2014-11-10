@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="utf-8">
@@ -7,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="">
-        <title>Step 1 | Submit a Recipe | TLDRecipes</title>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <!-- Custom title -->
+        <title>Step 1 : Submit a Recipe</title>
+
+        <!-- Bootstrap core CSS -->
         <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS files for this page -->
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="./submit.css" rel="stylesheet">
     </head>
     <body>
@@ -35,29 +37,28 @@
                         <div class="dz-default dz-message">
                             <span>Click here to upload recipe images</span>
                         </div>
-                    </form>   
-                <div>
+                    </form>
+                    <div>
             </section>
             <section>
                 <div class="time">
                     <label for="time-input">Approximate Time:</label>
                     <div id="time-input">
-<!--                         <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-                        </label> 
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 4
-                        </label> 
-                        <label class="radio-inline">
-                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 5
-                        </label>  -->
-
+                                                    <!--                         <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                                                    </label> 
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 4
+                                                    </label> 
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 5
+                                                    </label>  -->
                         <!-- Single button -->
                         <div class="btn-group">
                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -83,41 +84,55 @@
                     <label for="dietary-input">Dietary Restrictions</label>
                     <div id="dietary-input">
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox1" value="Veg-option"> <div class="recipe-diet"><div class="diet-icon vegetarian">V</div>
+                            <input type="checkbox" id="inlineCheckbox1" value="Veg-option">
+                                <div class="recipe-diet">
+                                    <div class="diet-icon vegetarian">V</div>
+                                </div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox2" value="option2"> <div class="recipe-diet"><div class="diet-icon vegan">Vg</div>
+                            <input type="checkbox" id="inlineCheckbox2" value="option2">
+                                <div class="recipe-diet">
+                                    <div class="diet-icon vegan">Vg</div>
+                                </div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option3"> <div class="recipe-diet"><div class="diet-icon dairy">Df</div>
+                            <input type="checkbox" id="inlineCheckbox3" value="option3">
+                                <div class="recipe-diet">
+                                    <div class="diet-icon dairy">Df</div>
+                                </div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option4"> <div class="recipe-diet"><div class="diet-icon kosher">K</div>
+                            <input type="checkbox" id="inlineCheckbox3" value="option4">
+                                <div class="recipe-diet">
+                                    <div class="diet-icon kosher">K</div>
+                                </div>
                         </label>
                         <label class="checkbox-inline">
-                            <input type="checkbox" id="inlineCheckbox3" value="option5"> <div class="recipe-diet"> <div class="diet-icon gluten">Gl</div></div>
-
-                           
+                            <input type="checkbox" id="inlineCheckbox3" value="option5">
+                                <div class="recipe-diet">
+                                    <div class="diet-icon gluten">Gl</div>
+                                </div>
                         </label>
                     </div>
                 </div>
             </section>
             <section>
-                <!--
-                <div class="goback faded">
-                    <a href="#"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
-                </div>
-                -->
+                                    <!--
+                                    <div class="goback faded">
+                                        <a href="#"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
+                                    </div>
+                                    -->
                 <div class="goforward">
                     <a href="./submit2.html"><span class="steptext">Next Step</span><i class="fa fa-arrow-circle-right fa-3x"></i></a>
                 </div>
             </section>
         </div>
+        <!-- JavaScript placed at the end of the document so the pages load faster -->
+        <script src="../js/vendor/jquery-1.11.1.js" type="text/javascript"></script>
+        <script src="../js/vendor/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../js/vendor/dropzone.js" type="text/javascript"></script>
+        <script src="../js/vendor/jquery-2.1.1.min.js"></script>
+        <script src="../cassio/header.js" type="text/javascript"></script>
+        <script src="../allen/navbar.js"></script>
     </body>
-    <script src="../js/vendor/jquery-1.11.1.js" type="text/javascript"></script>
-    <script src="../js/vendor/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../js/vendor/dropzone.js" type="text/javascript"></script>
-    <script src="../js/vendor/jquery-2.1.1.min.js"></script>
-    <script src="../js/vendor/bootstrap.min.js"></script>
-    <script src="../allen/navbar.js"></script>
 </html>
