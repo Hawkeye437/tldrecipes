@@ -41,7 +41,7 @@ function loadCards(listings) {
 			var min = 1;
 			var randSuccessRate = Math.floor(Math.random() * (max - min + 1) + min);
 			shuffle(diets);
-			var card = '<li class="recipe-card"><a href="../will/recipe.html"><div class="recipe-card-img" style="background-image: url(\'../allen/card.jpg\')"></div></a><div class="recipe-card-info"><div class="recipe-info-top-wrapper"><div class="recipe-info-name-wrapper"><div class="recipe-name"><a href="../will/recipe.html">Pasta</a></div><div class="recipe-user">by <a href="../cassio/userpage.html">pastafreak123</a></div></div><div class="recipe-diet">'
+			var card = '<li class="recipe-card"><a href="../will/recipe.html"><div class="recipe-card-img" style="background-image: url(\'../allen/card.jpg\')"></div></a><div class="recipe-card-info"><div class="recipe-info-top-wrapper"><div class="recipe-info-name-wrapper"><div class="recipe-name"><a href="../will/recipe.html">Pasta</a></div><div class="recipe-user">by <a href="../userpage.html">pastafreak123</a></div></div><div class="recipe-diet">'
 					+ diets[0] + diets[1] + diets[2]
 					+ '<div class="diet-tooltip"></div></div></div><div class="recipe-success"><div class="success-bar"><div class="success" style="width: '
 					+ randSuccessRate + '%"></div></div><div class="success-text"><span class="success-rate">'
