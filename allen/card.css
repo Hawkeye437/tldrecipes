@@ -58,8 +58,8 @@
 	font-size: 14px;
 }
 
-.recipe-card a,
-.recipe-card a:hover {
+.recipe-info-name-wrapper a,
+.recipe-info-name-wrapper a:hover {
 	color: black;
 }
 
@@ -113,6 +113,21 @@
 	font-size: 12px;
 	font-weight: 600;
 	color: white;
+}
+
+.diet-icon:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.diet-tooltip {
+	display: none;
+	width: 135px;
+	height: 20px;
+	float: right;
+	text-align: right;
+	font-size: 14px;
+	color: black;
 }
 
 .diet-icon.vegetarian {

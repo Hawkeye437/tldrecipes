@@ -17,7 +17,7 @@
 		<link href="../allen/global.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="../allen/card.css" rel="stylesheet">
+		<link href="../allen/browse.css" rel="stylesheet">
 
 		<!-- Bootstrap core JavaScript -->
 		<!-- Placed at the end of the document so the pages load faster -->
@@ -36,10 +36,31 @@
 	</head>
 
 	<body>
-		<div class="container" style="background: gray">
-			<h2>Recipes</h2>
+		<div class="section">
+			<div class="container">
+				<h2>Users</h2>
+			</div>
+			<div class="listing-wrapper">
+				<div class="listing-inner-wrapper">
+					<ul class="listing">
+						<li class="card">
+							<div class="user-card-img" style="background-image: url('../img/pastafreak123.png')"></div>
+							<div class="user-card-recipes">
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="users" data-length="6"></div>
 		</div>
-		<div class="recipes" data-length="6"></div>
-		<div class="recipes" data-length="2"></div>
+
+		<div class="section">
+			<div class="container">
+				<h2>Recipes</h2>
+			</div>
+			<div class="recipes" data-length="6"></div>
+			<div class="recipes" data-length="2"></div>
+		</div>
 	</body>
 </html>
