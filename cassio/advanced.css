@@ -40,19 +40,21 @@ input[type="radio"]:checked {
     border-color: #ccc;
 }
 
-.btn-primary.active, .btn-primary:hover, .btn-primary:focus {
-    color: #fff;
-    background-color: #bd3947;
-    border-color: #3e0007;
-}
-
 .btn-lg {
     color: #fff;
     background-color: #71000c;
     border-color: #000;
 }
 
-.btn-lg:hover, .btn-lg:focus, .btn-lg.active {
-    background-color: #bd0014;
+.btn-primary.active, .btn-primary:hover, .btn-primary:focus, .btn-lg.active, .btn-lg:hover, .btn-lg:focus {
+    color: #fff;
     border-color: #3e0007;
+}
+
+.btn-primary.active, .btn-primary:hover, .btn-primary:focus {
+    background-color: #bd3947;
+}
+
+.btn-lg.active, .btn-lg:hover, .btn-lg:focus {
+    background-color: #bd0014;
 }
