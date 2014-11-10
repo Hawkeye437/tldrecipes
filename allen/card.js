@@ -11,27 +11,30 @@ $(document).ready(function() {
 	$('.diet-icon').on('mouseenter', function(event) {
 		var tooltip = $(this).siblings('.diet-tooltip');
 		var tooltipText = $(this).data('tooltip');
+		var color = $(this).data('color');
 		tooltip.text(tooltipText);
+		tooltip.css('background-color', color);
 		tooltip.show();
 	});
 	$('.diet-icon').on('mouseout', function(event) {
 		var tooltip = $(this).siblings('.diet-tooltip');
 		tooltip.text('');
+		tooltip.css('background-color', 'white');
 		tooltip.hide();
 	});
 });
 
 function loadCards(listings) {
 	listings.each(function() {
-		$(this).html('<div class="recipe-listing-wrapper"><div class="recipe-listing-inner-wrapper"><ul class="recipe-listing"></ul></div></div>');
-		var listing = $(this).find('.recipe-listing');
+		$(this).html('<div class="listing-wrapper"><div class="listing-inner-wrapper"><ul class="listing"></ul></div></div>');
+		var listing = $(this).find('.listing');
 		var numCards = $(this).data('length');
 		var diets = [
-			'<a href="../allen/browse.html?category=Vegetarian Recipes" class="diet-icon vegetarian" data-tooltip="Vegetarian">V</a>',
-			'<a href="../allen/browse.html?category=Vegan Recipes" class="diet-icon vegan" data-tooltip="Vegan">Vg</a>',
-			'<a href="../allen/browse.html?category=Dairy-Free Recipes" class="diet-icon dairy" data-tooltip="Dairy-Free">Df</a>',
-			'<a href="../allen/browse.html?category=Kosher Recipes" class="diet-icon kosher" data-tooltip="Kosher">K</a>',
-			'<a href="../allen/browse.html?category=Gluten-Free Recipes" class="diet-icon gluten" data-tooltip="Gluten-Free">Gl</a>'
+			'<a href="../allen/browse.html?category=Vegetarian Recipes" class="diet-icon vegetarian" data-tooltip="Vegetarian" data-color="#096b00">V</a>',
+			'<a href="../allen/browse.html?category=Vegan Recipes" class="diet-icon vegan" data-tooltip="Vegan" data-color="#2a0">Vg</a>',
+			'<a href="../allen/browse.html?category=Dairy-Free Recipes" class="diet-icon dairy" data-tooltip="Dairy-Free" data-color="#008a8a">Df</a>',
+			'<a href="../allen/browse.html?category=Kosher Recipes" class="diet-icon kosher" data-tooltip="Kosher" data-color="#ab9210">K</a>',
+			'<a href="../allen/browse.html?category=Gluten-Free Recipes" class="diet-icon gluten" data-tooltip="Gluten-Free" data-color="#c46f0e">Gl</a>'
 		];
 		for (var i = 0; i < numCards; i++) {
 			var max = 100;
