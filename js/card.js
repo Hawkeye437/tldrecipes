@@ -12,7 +12,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.diet-icon').on('mouseenter', function(event) {
+	$('body').on('mouseenter', '.diet-icon', function(event) {
 		var tooltip = $(this).siblings('.diet-tooltip');
 		var tooltipText = $(this).data('tooltip');
 		var color = $(this).data('color');
@@ -20,7 +20,7 @@ $(document).ready(function() {
 		tooltip.css('background-color', color);
 		tooltip.show();
 	});
-	$('.diet-icon').on('mouseout', function(event) {
+	$('body').on('mouseout', '.diet-icon', function(event) {
 		var tooltip = $(this).siblings('.diet-tooltip');
 		tooltip.text('');
 		tooltip.css('background-color', 'white');
