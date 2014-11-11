@@ -9,7 +9,7 @@
 	/*Simulated black transparency by using a linear gradient with an image under it*/
 	background: 
 		linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
-		url("../sid/pasta-orig.jpg");
+		url("../img/pasta-orig.jpg");
 }
 
 .background-img{
