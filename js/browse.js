@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var category = location.search.split('category=')[1]
 	if (category) {
-		category = category.replace(/%20/g, ' ');
+		category = decodeURIComponent(category);
 		$('.browse-title').text(category);
 	}
 
