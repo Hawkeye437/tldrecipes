@@ -26,6 +26,10 @@ html, body {
 	font-size: 16px;
 }
 
+.recipe-time {
+	font-size: 18px;
+}
+
 .recipe-attr {
 	text-transform: uppercase;
 }
@@ -90,6 +94,10 @@ html, body {
 	text-align: center;
 }
 
+.wrapper2 {
+	display: inline-block;
+}
+
 .recipe-success .success-bar {
 	display: inline-block;
 	width: 300px;
@@ -114,11 +122,15 @@ html, body {
 .content {
 }
 
-.ingredients-list {
+.list {
+	display: table;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	display: inline-block;
 	border: 1px solid #333;
+}
+
+.instructions-list {
+	width: 600px;
 }
 
 .ingr-row {
@@ -153,6 +165,11 @@ html, body {
 
 .swap:hover {
 	opacity: 0.66;
+}
+
+.step-num {
+	font-size: 32px;
+	padding-bottom: 32px;
 }
 
 .vote-thanks {

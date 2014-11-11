@@ -9,6 +9,10 @@ $(".vote button").click(function() {
 	$(".vote-thanks").fadeIn(300);
 });
 
+$('.carousel').carousel({
+    interval: false
+}) 
+
 // First time
 $(".swap").click(function() {
 	var row = $(".swap").parent()
