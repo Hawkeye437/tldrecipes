@@ -272,7 +272,12 @@
 	height: 50px;
 	vertical-align: top;
 	margin-right: 5px;
-	background: white;
+	border: 1px solid white;
+	box-sizing: content-box;
+}
+
+.recipe-img:hover {
+	border: 1px solid #888;
 }
 
 .recipe-img.more {
