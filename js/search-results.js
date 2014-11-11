@@ -6,6 +6,8 @@ $(document).ready(function() {
 			$('.section').append('<div class="users" data-length="12"></div>');
 		else
 			$('.section').append('<div class="recipes" data-length="12"></div>');
+	} else {
+		$('.section').append('<div class="recipes" data-length="12"></div>');
 	}
 
 	$(window).scroll(function() {
