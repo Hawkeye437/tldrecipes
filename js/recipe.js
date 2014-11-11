@@ -3,6 +3,12 @@
 var ingrList = ['Drop of African Children Tears', 'Green Onion', 'Cup of Cheese'];
 var ctr = 0;
 
+$(".vote-thanks").hide();
+
+$(".vote button").click(function() {
+	$(".vote-thanks").fadeIn(300);
+});
+
 // First time
 $(".swap").click(function() {
 	var row = $(".swap").parent()

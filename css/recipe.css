@@ -116,6 +116,7 @@ html, body {
 
 .ingredients-list {
 	margin-top: 30px;
+	margin-bottom: 30px;
 	display: inline-block;
 	border: 1px solid #333;
 }
@@ -152,6 +153,12 @@ html, body {
 
 .swap:hover {
 	opacity: 0.66;
+}
+
+.vote-thanks {
+	padding-top: 5px;
+	color: #27ae60;
+	font-weight: 600;
 }
 
 .footer {
