@@ -6,3 +6,8 @@ $(document).ready(function () {
     $('head').append('<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">');
     $('head').append('<link rel="icon" href="img/favicon.ico" type="image/x-icon">');
 });
+
+var easter_egg = new Konami(function() { 
+	console.log("KONAMI CODE ENTERED");
+	window.location.href= "http://corndogoncorndog.com/";
+});
