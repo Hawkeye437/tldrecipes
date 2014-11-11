@@ -7,6 +7,56 @@ head, body {
     height: 50px;
 }
 
+@media (min-width: 1242px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    #user-image {
+        margin-left: 396px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1241px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    #user-image {
+        margin-left: 396px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    #user-image {
+        margin-left: 210px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+    .container {
+        margin-top: 150px;
+    }
+
+    #user-image {
+        margin-left: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin-top: 50px;
+    }
+
+    #user-image {
+        margin-left: 26px;
+    }
+}
+
 #user-page {
     display: block;
     width: 100%;
@@ -17,7 +67,6 @@ head, body {
 
 #user-image {
     width: 200px;
-    margin-left: 39.8%;
 }
 
 #user-page h1, h2 {
@@ -34,7 +83,7 @@ head, body {
     width: 112.5%;
 }
 
-#user-info{
+#user-info {
     padding-top: 20px;
     padding-left: 10px;
     padding-bottom: 10px;
