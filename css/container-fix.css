@@ -19,3 +19,8 @@
 		text-align: center;
 	}
 }
+
+.container h2 a,
+.container h2 a:hover {
+	color: black;
+}
