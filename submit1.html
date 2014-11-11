@@ -55,12 +55,28 @@
                         <label class="radio-inline">
                             <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 5
                         </label>  -->
-                        <!-- Single button -->
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Select a Time  <span class="caret"></span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                Dropdown
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background: #ffffff">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">10 Minutes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">15 Minutes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">30 Minutes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">45 Minutes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">1 Hour</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">1.5 Hours</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">2 Hours</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1">3 Hours</a></li>
+                                </ul>
+                            </div>
+                            <!--
+                            <button type="button" id="dropdownmenu1" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Select a Time  <span class="caret"></span>
                             </button>
-                            <ul id = "dropdown" class="dropdown-menu" role="menu">
-                                <li><a href="#">5 Minutes</a></li>
+                            <ul id="dropdown" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" href="#">5 Minutes</a></li>
                                 <li><a href="#">10 Minutes</a></li>
                                 <li><a href="#">15 Minutes</a></li>
                                 <li><a href="#">30 Minutes</a></li>
@@ -71,6 +87,7 @@
                                 <li><a href="#">3 Hours</a></li>
                             </ul>
                         </div>
+                        -->
                     </div>
                 </div>
             </section>
@@ -79,24 +96,24 @@
                     <label for="dietary-input">Dietary Restrictions</label>
                     <div id="dietary-input">
                         <label class="checkbox-inline"></label>
-                            <input type="checkbox" id="inlineCheckbox1" value="Veg-option">
-                                    <div class="diet-icon vegetarian">V</div>
+                        <input type="checkbox" id="inlineCheckbox1" value="Veg-option">
+                        <div class="diet-icon vegetarian">V</div>
 
                         <label class="checkbox-inline"></label>
-                            <input type="checkbox" id="inlineCheckbox2" value="option2">
-                                    <div class="diet-icon vegan">Vg</div>
+                        <input type="checkbox" id="inlineCheckbox2" value="option2">
+                        <div class="diet-icon vegan">Vg</div>
 
                         <label class="checkbox-inline"></label>
-                            <input type="checkbox" id="inlineCheckbox3" value="option3">
-                                    <div class="diet-icon dairy">Df</div>
+                        <input type="checkbox" id="inlineCheckbox3" value="option3">
+                        <div class="diet-icon dairy">Df</div>
                                 
                         <label class="checkbox-inline"></label>
-                            <input type="checkbox" id="inlineCheckbox3" value="option4">
-                                    <div class="diet-icon kosher">K</div>
+                        <input type="checkbox" id="inlineCheckbox3" value="option4">
+                        <div class="diet-icon kosher">K</div>
 
                         <label class="checkbox-inline"></label>
-                            <input type="checkbox" id="inlineCheckbox3" value="option5">
-                                    <div class="diet-icon gluten">Gl</div>
+                        <input type="checkbox" id="inlineCheckbox3" value="option5">
+                        <div class="diet-icon gluten">Gl</div>
 
                     </div>
                 </div>

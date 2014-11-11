@@ -15,3 +15,10 @@ $("#stepAdd").click(function() {
 	num++;
 	$(".ing-wr").append(HTML_STEPROW1 + num + HTML_STEPROW2);
 });
+
+$('.dropdown-menu li a').click(function (e) {
+    var newHeading = $(this).text();
+    var $heading = $('.dropdown > button');
+    var $caret = $('.caret', $heading);
+    $heading.html(newHeading + ' ').append($caret);
+});

@@ -119,8 +119,16 @@ a:hover, a:focus {
 
 #dropdown
 {
-	background-color:white;
+	background-color: white;
 }
+
+.dropdown-menu {
+	
+}
+.dropdown-menu > li > a {
+	cursor: pointer;
+}
+
 
 #ingredients-label {
 	width: 100%;
