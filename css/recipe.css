@@ -1,1 +1,160 @@
 /* recipe.css */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.bold {
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.header {
+	padding-top: 25px;
+}
+
+.recipe-title {
+	font-size: 42px;
+	text-transform: uppercase;
+}
+
+.recipe-author {
+	font-size: 16px;
+}
+
+.recipe-attr {
+	text-transform: uppercase;
+}
+
+.diet-icon {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 0 0 4px 4px;
+	padding: 3px 0;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	color: white;
+}
+
+.diet-icon:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.diet-tooltip {
+	display: none;
+	/*width: 135px;*/
+	height: 20px;
+	float: right;
+	padding: 0 5px;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+}
+
+.diet-icon.vegetarian {
+	background: #096b00;
+}
+
+.diet-icon.vegan {
+	background: #2a0;
+}
+
+.diet-icon.dairy {
+	background: #008a8a;
+}
+
+.diet-icon.kosher {
+	background: #ab9210;
+}
+
+.diet-icon.gluten {
+	background: #c46f0e;
+}
+
+.recipe-pic > img {
+	margin-top: 10px;
+	border: 2px solid #bbb;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.recipe-success .success-bar {
+	display: inline-block;
+	width: 300px;
+	height: 15px;
+	border: 1px solid #ccc;
+	background: #eee;
+}
+
+.success-rate {
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.success-bar .success {
+	height: 100%;
+	/*#0094e5*/
+	/*#48bd13*/
+	background-color: #097fb9;
+}
+
+.content {
+}
+
+.ingredients-list {
+	margin-top: 30px;
+	display: inline-block;
+	border: 1px solid #333;
+}
+
+.ingr-row {
+	display: table-row;
+}
+.even {
+	background: #e6e6e6;
+}
+
+.ingr-header {
+	display: table-cell;
+}
+
+.ingr-cell {
+	display: table-cell;
+	padding: 10px 15px;
+	vertical-align: middle;
+}
+
+.ingr-num {
+	font-weight: 600;
+	width: 50px;
+}
+
+.ingr-name {
+	width: 200px;
+}
+
+.swap {
+	cursor: pointer;
+}
+
+.swap:hover {
+	opacity: 0.66;
+}
+
+.footer {
+	height: 75px;
+}
+
