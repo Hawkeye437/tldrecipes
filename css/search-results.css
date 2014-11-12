@@ -1,0 +1,16 @@
+.search-filter {
+	display: inline-block;
+	float: right;
+}
+
+.search-filter > * {
+	display: inline-block;
+}
+
+.search-filter label {
+	margin-right: 10px;
+}
+
+.search-filter select {
+	display: none;
+}
