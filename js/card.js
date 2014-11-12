@@ -34,10 +34,12 @@ function loadUserCards(listings) {
 		var listing = $(this).find('.listing');
 		var numCards = $(this).data('length');
 		for (var i = 0; i < numCards; i++) {
-			var card = '<li class="user card"><div class="user-info"><a href="userpage.html" class="user-card-img"><span style="background-image: url(\'img/pastafreak123.png\')"></span></a><div class="user-stats"><div class="user-name"><a href="userpage.html">pastafreak123</a></div><div>Joined: Nov 8, 2014</div><div>Last active: 2 days ago</div></div></div><div class="user-recipes"><div class="user-recipes-heading">Recipes Submitted</div><ul class="user-recipe-list">';
 			var max = 999;
 			var min = 1;
 			var randRecipeCount = Math.floor(Math.random() * (max - min + 1) + min);
+			var card = '<li class="user card"><div class="user-info"><a href="userpage.html" class="user-card-img"><span style="background-image: url(\'img/pastafreak123.png\')"></span></a><div class="user-stats"><div class="user-name"><a href="userpage.html">pastafreak123</a></div><div>Joined: Nov 8, 2014</div><div>Last active: 2 days ago</div></div></div><div class="user-recipes"><div class="user-recipes-heading">'
+					+ randRecipeCount
+					+ ' Recipes Submitted</div><ul class="user-recipe-list">';
 			for (var j = 0; j < Math.min(4, randRecipeCount); j++) {
 				card += '<li class="recipe-img"><a href="recipe.html"><span class="recipe-img-thumb" style="background-image: url(\'img/card.jpg\')"></span></a></li>';
 			}
