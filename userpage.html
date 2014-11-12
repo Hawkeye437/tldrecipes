@@ -11,7 +11,6 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this page -->
-        <link href="css/style.css" rel="stylesheet">
         <link href="css/userpage.css" rel="stylesheet">
 
         <!-- Custom title -->
@@ -20,46 +19,38 @@
     </head>
 
     <body>
-
+        <div id="user-page" class="container">
+            <h1>pastafreak123</h1>
+            <div id="user-image">
+                <img class="img-responsive" alt="200x200" src="img/pastafreak123.png" data-holder-rendered="true">
+            </div>
+            <h2>User info</h2>
+            <div class="user-section">
+                <ul>
+                    <li>Recipes submitted: 9001</li>
+                    <li>Recipes favorited: 9001</li>
+                    <li>Joined: Nov 8, 2014</li>
+                    <li>Last active: 2 days ago</li>
+                </ul>
+            </div>
+            <h2>About Me</h2>
+            <div id="about-me" class="user-section">
+                <p>I love pasta.  I eat pasta 3 meals a day.  Morning, noon and night I make and eat pasta.  I've made every pasta recipe known to man.  I simply love pasta.</p>
+            </div>
+            <button type="button" class="btn btn-default btn-lg" id="change"> Change description </button>
+            <h2>Submitted Recipes</h2>
+        </div>
+        <div class="recipes" data-length="3"></div>
         <div class="container">
-            <div id="user-page">
-                <h1>pastafreak123</h1>
-                <br>
-                <div id="user-image">
-                    <img class="img-responsive" alt="200x200" src="img/pastafreak123.png" data-holder-rendered="true">
-                </div>
-                <br>
-                <h2>User info</h2>
-                <br>
-                <div id="user-info">
-                    <ul>
-                        <li>Recipes submitted: 3</li>
-                        <li>Recipes favorited: 3</li>
-                        <li>Joined at: Nov-8-2014 17:16 GMT-06:00</li>
-                        <li>Last active: 2 days ago</li>
-                    </ul>
-                </div>
-                <br>
-                <h2>About Me</h2>
-                <br>
-                <div id="about-me">
-                    <p>I love pasta.  I eat pasta 3 meals a day.  Morning, noon and night I make and eat pasta.  I've made every pasta recipe known to man.  I simply love pasta.</p>
-                </div>
-                <br>
-                <button type="button" class="btn btn-default btn-lg" id="change"> Change description </button>
-                <br>
-                <h2>Submitted recipes</h2>
-                <div class="recipes" data-length="3"></div>
-                <a class="btn btn-primary btn-lg" href="#" role="button">See all submitted recipes</a>
-                <br>
-                <br>
-                <h2>Favorited recipes</h2>
-                <div class="recipes" data-length="3"></div>
-                <a class="btn btn-primary btn-lg" href="#" role="button">See all favorited recipes</a>
-                <br>
-                <br>
-            </div><!-- /.user-page -->
-        </div><!-- /.container -->
+            <a class="btn btn-primary btn-lg" href="browse.html?category=pastafreak123's Recipes" role="button">See all submitted recipes</a>
+            <h2>Favorited Recipes</h2>
+        </div>
+        <div class="recipes" data-length="3"></div>
+        <div class="container">
+            <a class="btn btn-primary btn-lg" href="browse.html?category=pastafreak123's Favorite Recipes" role="button">See all favorited recipes</a>
+        </div>
+
+
         <!-- JavaScript placed at the end of the document so the pages load faster -->
         <!-- jQuery and Bootstrap JS files -->
         <script src="js/vendor/jquery-2.1.1.min.js"></script>
