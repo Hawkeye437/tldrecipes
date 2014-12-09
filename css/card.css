@@ -18,24 +18,6 @@
 	font-size: 0;
 }
 
-@media (min-width: 1201px) {
-	.listing {
-		width: 1125px;
-	}
-}
- 
-@media (min-width: 801px) and (max-width: 1200px) {
-	.listing {
-		width: 750px;
-	}
-}
- 
-@media (max-width: 800px) {
-	.listing {
-		width: 375px;
-	}
-}
-
 .card {
 	display: inline-block;
 	width: 350px;
@@ -48,6 +30,35 @@
 }
 
 
+@media (min-width: 1201px) {
+	.listing {
+		width: 1125px;
+	}
+}
+ 
+@media (min-width: 801px) and (max-width: 1200px) {
+	.listing {
+		width: 750px;
+	}
+}
+ 
+@media (min-width: 401px) and (max-width: 800px) {
+	.listing {
+		width: 375px;
+	}
+}
+
+@media (max-width: 400px) {
+	.listing {
+		width: 100%;
+		padding: 0 25px 0 0;
+	}
+
+	.card {
+		width: 100%;
+		margin: 0 0 25px 0;
+	}
+}
 
 
 
@@ -59,7 +70,7 @@
 /*****  Recipe Card  *****/
 
 .recipe.card {
-	height: 350px;
+	/*height: 350px;*/
 }
 
 .recipe-info-name-wrapper a,
@@ -68,7 +79,7 @@
 }
 
 .recipe-card-img {
-	height: 70%;
+	height: 245px;
 	background-size: cover;
 }
 
@@ -88,7 +99,7 @@
 }
 
 .recipe-info-name-wrapper {
-	width: 230px; /*248px*/
+	/*width: 230px; 248px*/
 	float: left;
 }
 
@@ -203,7 +214,6 @@
 
 .user-info {
 	width: 100%;
-	height: 100px;
 }
 
 .user-card-img {
@@ -252,6 +262,7 @@
 
 .user-recipes {
 	margin-top: 15px;
+	margin-bottom: -5px;
 	font-size: 0px;
 }
 
@@ -271,7 +282,7 @@
 	width: 50px;
 	height: 50px;
 	vertical-align: top;
-	margin-right: 5px;
+	margin: 0 5px 5px 0;
 	border: 1px solid white;
 	box-sizing: content-box;
 }
@@ -298,4 +309,17 @@
 	display: inline-block;
 	height: 110%;
 	vertical-align: middle;
+}
+
+@media (max-width: 400px) {
+	.user-card-img {
+		display: block;
+		margin: auto;
+	}
+
+	.user-stats {
+		display: block;
+		margin: 10px 0 0 0;
+		text-align: center;
+	}
 }
