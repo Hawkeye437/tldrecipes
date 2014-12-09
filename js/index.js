@@ -114,7 +114,7 @@ $(document).ready(function() {
 		bodyHeight = getDocHeight(),
 		bodyWidth = document.body.offsetWidth;
 
-	$('a').on('click', function(event) {
+	$('#snow-link').on('click', function(event) {
 		event.preventDefault();
 		init();
 	});
