@@ -98,9 +98,6 @@ html, body {
 
 .wrapper2 {
 	display: inline-block;
-}
-
-#instructions {
 	width: 100%;
 }
 
@@ -130,14 +127,16 @@ html, body {
 
 .list {
 	display: table;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	border: 1px solid #333;
 }
 
 .instructions-list {
-	width: 100%;
-	max-width: 600px;
+
 }
 
 .ingr-row {
@@ -163,7 +162,7 @@ html, body {
 }
 
 .ingr-name {
-	width: 200px;
+
 }
 
 .swap {

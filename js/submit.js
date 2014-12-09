@@ -22,3 +22,32 @@ $('.dropdown-menu li a').click(function (e) {
     var $caret = $('.caret', $heading);
     $heading.html(newHeading + ' ').append($caret);
 });
+
+function createUploader() {
+	var thumbnailuploader = new qq.FineUploader({
+	  element: document.getElementById('thumbnail-fine-uploader'),
+	  template: "qq-simple-thumbnails-template",
+	  thumbnails: {
+	      placeholders: {
+	        waitingPath: "css/placeholders/waiting-generic.png",
+	        notAvailablePath: "css/placeholders/not_available-generic.png"
+	      }
+	  },
+	  validation: {
+	      allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+	  }
+	});
+}
+
+var thumbnailuploader = new qq.FineUploader({
+    template: "qq-simple-thumbnails-template",
+    element: document.getElementById("thumbnail-fine-uploader"),
+    request: {
+        endpoint: 'server/success.html'
+    },
+    validation: {
+        allowedExtensions: ['jpeg', 'jpg', 'gif', 'png']
+    },
+    debug: true,
+    demoMode: true // Undocumented -> Only for the gh-pages demo website
+});
