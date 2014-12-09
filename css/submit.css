@@ -24,6 +24,10 @@ section {
 	width: 66%;
 }
 
+.upload {
+	text-align: center;
+}
+
 .header {
 	padding: 35px;
 }
@@ -50,6 +54,10 @@ section {
 .dropzone {
 	background: rgba(0, 0, 0, 0.15);
 	cursor: pointer;
+}
+
+#thumbnail-fine-uploader {
+	display: inline-block;
 }
 
 .steptext {

@@ -61,3 +61,7 @@ function swapIngr(e) {
 		row.append('<div class="ingr-cell ingr-num">1</div><div class="ingr-cell">' + ingrList[ctr] + '</div><div class="ingr-cell swap" onclick="swapIngr(this)"><i class="fa fa-refresh"></i></div>').fadeIn(300);
 	});
 }
+
+var clock = $('.clock').FlipClock(3600, {
+		countdown: true
+	});
