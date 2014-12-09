@@ -117,8 +117,6 @@ html, body {
 
 .success-bar .success {
 	height: 100%;
-	/*#0094e5*/
-	/*#48bd13*/
 	background-color: #097fb9;
 }
 
@@ -128,15 +126,20 @@ html, body {
 .list {
 	display: table;
 	width: 100%;
-	max-width: 600px;
+	max-width: 500px;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	border: 1px solid #333;
 }
 
-.instructions-list {
+.instructions-step {
 
+}
+
+#carousel-example-generic {
+	display: inline-block;
+	width: 100%;
 }
 
 .ingr-row {
@@ -148,6 +151,10 @@ html, body {
 
 .ingr-header {
 	display: table-cell;
+	padding: 15px 20px;
+	background: #71000C;
+	color: white;
+	font-size: 16px;
 }
 
 .ingr-cell {
@@ -166,6 +173,10 @@ html, body {
 }
 
 .swap {
+	width: 25px;
+}
+
+.swap-on {
 	cursor: pointer;
 }
 
@@ -191,6 +202,26 @@ html, body {
 	padding-top: 5px;
 	color: #27ae60;
 	font-weight: 600;
+}
+
+#favorite-button {
+	margin-top: 10px;
+}
+
+.add-favorite {
+	padding-top: 5px;
+	color: #e67e22;
+	font-weight: 600;
+}
+
+.remove-favorite {
+	padding-top: 5px;
+	color: #e74c3c;
+	font-weight: 600;
+}
+
+.fa-star {
+	color: #f1c40f;
 }
 
 .footer {

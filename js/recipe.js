@@ -4,9 +4,30 @@ var ingrList = ['Cup of Cheese', 'Green Onion', 'Drop of African Children Tears'
 var ctr = 0;
 
 $(".vote-thanks").hide();
+$(".add-favorite").hide();
+$(".remove-favorite").hide();
 
 $(".vote button").click(function() {
 	$(".vote-thanks").fadeIn(300);
+});
+
+$("#favorite-button").click(function() {
+	if ($("#favorite-button").hasClass("fav")) {
+		$(".remove-favorite").hide();
+		$(".add-favorite").fadeIn(300);
+		$("#favorite-button").html('<i class="fa fa-star fa-2"></i> Unfavorite');
+		$("#favorite-button").css("background-color", "#e6e6e6");
+		$("#favorite-button").removeClass("fav");
+		$("#favorite-button").addClass("unfav");
+	}
+	else {
+		$(".add-favorite").hide();
+		$(".remove-favorite").fadeIn(300);
+		$("#favorite-button").html('<i class="fa fa-star fa-2"></i> Favorite');
+		$("#favorite-button").css("background-color", "#fff");
+		$("#favorite-button").removeClass("unfav");
+		$("#favorite-button").addClass("fav");
+	}
 });
 
 $('.carousel').carousel({

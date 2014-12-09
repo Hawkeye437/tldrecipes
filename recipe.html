@@ -18,7 +18,7 @@
             <div class="header">
                 <div class="recipe-title">Pasta Pasta with Extra Pasta Sauce</div>
                 <div class="wrapper">
-                    <div class="recipe-time">30 Minutes</div>
+                    <div class="recipe-time">1 hr & 30 min</div>
                     <div class="success-rate">77% Success Rate</div>
                     <span class="recipe-success">
                         <div class="success-bar">
@@ -33,6 +33,16 @@
                 </div>
                 <div class="recipe-author">By: <a href="./userpage.html">pastafreak123</a></div>
                 <div class="recipe-pic"><img src="./img/card.jpg" alt="GIVE ME PASTA OR GIVE ME DEATH"></div>
+                <div class="wrapper">
+                    <a id="favorite-button" class="btn btn-default btn-sm fav">
+  <i class="fa fa-star fa-2"></i> Favorite</a>
+                    <div class="add-favorite">
+                        <p>Recipe added to your favorites!</p>
+                    </div>
+                    <div class="remove-favorite">
+                        <p>Recipe removed from your favorites!</p>
+                    </div>
+                </div>
                 <hr width="66%">
                 <div class="wrapper">
                     <div class="wrapper2">
@@ -81,7 +91,7 @@
                             <div class="ingr-row">
                                 <div class="ingr-cell ingr-num">1</div>
                                 <div class="ingr-cell">Cup of Cheese</div>
-                                <div class="ingr-cell swap"><i class="fa fa-refresh"></i></div>
+                                <div class="ingr-cell swap swap-on"><i class="fa fa-refresh"></i></div>
                             </div>
                         </div>
                     </div>
@@ -157,63 +167,63 @@
                         </div>
                 </div>
                 <div class="wrapper">
-                    <div class="instructions-step">
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="step-num">STEP 1</div>
-                                    <p>Fill a pot with 10 cups of water and teaspoon of salt</p>
+                        <div class="instructions-step">
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class="step-num">STEP 1</div>
+                                        <p>Fill a pot with 10 cups of water and teaspoon of salt</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 2</div>
+                                        <p>Set water to boil</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 3</div>
+                                        <p>While the water is boiling, chop up peppers and onions</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 4</div>
+                                        <p>Fill a pot with 10 cups of water and teaspoon of salt</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 5</div>
+                                        <p>Let pasta cook for 10 minutes, stirring occasionally</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 6</div>
+                                        <p>On the side, heat oil in a pan</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 7</div>
+                                        <p>Once the oil has heated, add onions to pan</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 8</div>
+                                        <p>Stir often.  After a few minutes, when the onions start to change color, stop heating onions.</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 9</div>
+                                        <p>After 10 minutes, turn off stove and drain the pasta</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="step-num">STEP 10</div>
+                                        <p>Once the steam from the pasta has stopped, add peppers, onions and tomato sauce.  Top it off with shredded cheese.</p>
+                                    </div>
                                 </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 2</div>
-                                    <p>Set water to boil</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 3</div>
-                                    <p>While the water is boiling, chop up peppers and onions</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 4</div>
-                                    <p>Fill a pot with 10 cups of water and teaspoon of salt</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 5</div>
-                                    <p>Let pasta cook for 10 minutes, stirring occasionally</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 6</div>
-                                    <p>On the side, heat oil in a pan</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 7</div>
-                                    <p>Once the oil has heated, add onions to pan</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 8</div>
-                                    <p>Stir often.  After a few minutes, when the onions start to change color, stop heating onions.</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 9</div>
-                                    <p>After 10 minutes, turn off stove and drain the pasta</p>
-                                </div>
-                                <div class="item">
-                                    <div class="step-num">STEP 10</div>
-                                    <p>Once the steam from the pasta has stopped, add peppers, onions and tomato sauce.  Top it off with shredded cheese.</p>
+                                  <!-- Controls -->
+                                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
                                 </div>
                             </div>
-                              <!-- Controls -->
-                              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                            </div>
-                        </div>
-                </div>
+                    </div>
                 <hr width="66%">
                 <div class="wrapper">
                     <h3>Did it work?</h3>
@@ -222,7 +232,7 @@
                         <button type="button" class="btn btn-default">No</button>
                     </div>
                     <div class="vote-thanks">
-                        <p>Thank you! Your vote has been recorded and will help improve the quality of recipes on this site.</pd>
+                        <p>Thank you! Your vote has been recorded and will help improve the quality of recipes on this site.</p>
                     </div>
                 </div>
             </div>
