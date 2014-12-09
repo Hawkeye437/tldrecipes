@@ -86,6 +86,8 @@ html, body {
 }
 
 .recipe-pic > img {
+	width: 66%;
+	max-width: 500px;
 	margin-top: 10px;
 	border: 2px solid #bbb;
 }
@@ -96,6 +98,10 @@ html, body {
 
 .wrapper2 {
 	display: inline-block;
+}
+
+#instructions {
+	width: 100%;
 }
 
 .recipe-success .success-bar {
@@ -130,7 +136,8 @@ html, body {
 }
 
 .instructions-list {
-	width: 600px;
+	width: 100%;
+	max-width: 600px;
 }
 
 .ingr-row {
