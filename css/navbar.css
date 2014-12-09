@@ -45,13 +45,6 @@ body {
 	margin-left: 5px
 }
 
-@media (max-width: 767px) {
-	.navbar .btn {
-		margin-left: 0;
-		width: 100%
-	}
-}
-
 .navbar-brand {
 	font-size: 32px
 }
@@ -61,4 +54,19 @@ body {
 	float: none;
 	vertical-align: top;
 	padding-right: 5px;
+}
+
+/*****  Navbar Responsiveness  *****/
+@media (min-width: 1281px) and (max-width: 1366px) {
+	.nav > li > a { 
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.navbar .btn {
+		margin-left: 0;
+		width: 100%
+	}
 }
