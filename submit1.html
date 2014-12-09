@@ -17,7 +17,7 @@
         <div class="content">
             <div class="header">
                 <div class="title">Submit A Recipe</div>
-                <div class="step">STEP 1</div>
+                <div class="step">STEP 1: Recipe Overview</div>
             </div>
             <section>
                 <div class="name form-group">
@@ -32,14 +32,15 @@
                     <form action="./" class="dropzone" id="dropzoneUpload">
                         <div class="dz-default dz-message">
                             <span>Click here or drag images to this region to upload recipe images.
-                            <br>Upload as many images as you want.</span>
+                            <br>Upload as many images as you want.
+                            <br>The images you upload are shown here, and can be deleted if you want to.</span>
                         </div>
                     </form>
                 </div>
             </section>
             <section>
                 <div class="time">
-                    <label for="time-input">Approximate Time</label>
+                    <label for="time-input">Approximate Cooking Time:</label>
                     <div id="time-input">
                         <!--                         <label class="radio-inline">
                             <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
@@ -59,7 +60,7 @@
                         <div class="btn-group">
                             <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                    Dropdown
+                                    In minutes or hours
                                     <span class="caret"></span>
                                 </button>
                                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" style="background: #ffffff">
@@ -100,22 +101,27 @@
                         <label class="checkbox-inline"></label>
                         <input type="checkbox" id="inlineCheckbox1" value="Veg-option">
                         <div class="diet-icon vegetarian">V</div>
+                        <span>Vegan</span>
 
                         <label class="checkbox-inline"></label>
                         <input type="checkbox" id="inlineCheckbox2" value="option2">
                         <div class="diet-icon vegan">Vg</div>
+                        <span>Vegetarian</span>
 
                         <label class="checkbox-inline"></label>
                         <input type="checkbox" id="inlineCheckbox3" value="option3">
                         <div class="diet-icon dairy">Df</div>
+                        <span>Dairy-Free</span>
                                 
                         <label class="checkbox-inline"></label>
                         <input type="checkbox" id="inlineCheckbox3" value="option4">
                         <div class="diet-icon kosher">K</div>
+                        <span>Kosher</span>
 
                         <label class="checkbox-inline"></label>
                         <input type="checkbox" id="inlineCheckbox3" value="option5">
                         <div class="diet-icon gluten">Gl</div>
+                        <span>Gluten-free</span>
 
                     </div>
                 </div>
