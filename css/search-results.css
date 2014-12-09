@@ -14,3 +14,30 @@
 .search-filter select {
 	display: none;
 }
+
+.container .listing-wrapper {
+	margin-top: -33px;
+}
+
+@media (max-width: 800px) {
+	.container .listing-wrapper {
+		margin: 0;
+	}
+
+	.listing-inner-wrapper.search-filter {
+		display: block;
+		float: none;
+		margin: 10px 0 0 0;
+		padding: 0;
+	}
+
+	.search-filter-wrapper {
+		display: block;
+	}
+}
+
+@media (max-width: 400px) {
+	.listing-inner-wrapper.search-filter {
+		padding: 0 25px;
+	}
+}
