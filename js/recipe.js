@@ -1,6 +1,6 @@
 //
 
-var ingrList = ['Drop of African Children Tears', 'Green Onion', 'Cup of Cheese'];
+var ingrList = ['Cup of Cheese', 'Green Onion', 'Drop of African Children Tears'];
 var ctr = 0;
 
 $(".vote-thanks").hide();
@@ -15,8 +15,7 @@ $('.carousel').carousel({
 
 // First time
 $(".swap").click(function() {
-	var row = $(".swap").parent()
-	console.log(row);
+	var row = $(".swap").parent();
 	row.fadeOut(300, function() {
 		row.empty();
 		ctr++;
