@@ -86,3 +86,7 @@ body:last-child {
     background-color: #bd0014;
     border-color: #3e0007;
 }
+
+.btn-primary {
+    margin-bottom: 50px;
+}
